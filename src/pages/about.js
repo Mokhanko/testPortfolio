@@ -1,11 +1,11 @@
 import React from "react";
 import Body from "./components/body"
 
-const inputs = [
-  {
-    name: "email"
-  }
-];
+// const inputs = [
+//   {
+//     name: "email"
+//   }
+// ];
 
 class User extends React.Component {
   state = {
@@ -13,10 +13,10 @@ class User extends React.Component {
   }
 
   onChange = (e) => {
-    e.preventDefault();
+    
     console.log(e.target.name)
     console.log(e.target.value)
-    this.setState({[e.target.name]: e.target.value});
+    this.setState({name: e.target.value});
   }
 
   render() {
